@@ -1,10 +1,12 @@
+
+
 //Variables for setup
 
 let container;
 let camera;
 let renderer;
 let scene;
-let house;
+let doll;
 
 function init() {
   container = document.querySelector(".scene");
@@ -19,7 +21,7 @@ function init() {
 
   //Camera setup
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(-2, 1, 5);
+  camera.position.set(-2, 1, 6);
 
   const ambient = new THREE.AmbientLight(0x404040, 2);
   scene.add(ambient);
@@ -42,6 +44,7 @@ function init() {
     doll = gltf.scene.children[0];
     animate();
   });
+
 }
 
 
@@ -53,6 +56,8 @@ function animate() {
   doll.rotation.y += 0.01;
   doll.rotation.x += 0.005;
   renderer.render(scene, camera);
+
+  
 }
 
 init();
@@ -65,3 +70,5 @@ function onWindowResize() {
 }
 
 window.addEventListener("resize", onWindowResize);
+
+

@@ -2,22 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Chivo Mono', monospace;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'chivo mono', monospace;
     overflow: hidden;
-    background-color:violet;
+    background-color:dimgray;
     text-decoration-color: antiquewhite;
     
 }
 
-.scene,
-canvas {
+.scene, canvas {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-audio :playing
+nav {
+    display: flex;
+    padding: 10% 6%;
+    justify-content: space-between;
+    align-items: left;
+}
 
+nav img {
+    width: 30px;
+}
+
+.nav-links {
+
+    flex:text;
+    text-align: left;
+    color: #ffffff;
+}
+
+.nav-links ul li {
+    list-style: none;
+    padding: 20px 30px;
+    position: relative;
+    text-align: left;
+}
+
+.nav-links ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 33px;
+    font-family: 'chivo mono', monospace;
+    text-align: left;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 2%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin:auto;
+    align-items: left;
+    margin-left: 0%;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    align-items: left;
+
+}
