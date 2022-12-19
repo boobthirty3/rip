@@ -16,7 +16,7 @@ body {
 
 nav {
     display: flex;
-    padding: 10% 6%;
+    padding: 2% 1%;
     justify-content: space-between;
     align-items: left;
 }
@@ -27,14 +27,13 @@ nav img {
 
 .nav-links {
 
-    flex:text;
     text-align: left;
     color: #ffffff;
 }
 
 .nav-links ul li {
     list-style: none;
-    padding: 20px 30px;
+    padding: 30px 5px;
     position: relative;
     text-align: left;
 }
@@ -49,13 +48,12 @@ nav img {
 
 .nav-links ul li::after {
     content: '';
-    width: 2%;
+    width: 0%;
     height: 2px;
     background: #ffffff;
     display: block;
     margin:auto;
-    align-items: left;
-    margin-left: 0%;
+    transition: 0.5s;
 
 }
 
@@ -63,4 +61,28 @@ nav img {
     width: 100%;
     align-items: left;
 
+}
+
+.socials {
+    width: 90%;
+    color: #fff;
+    text-align: right;
+    padding: 5%, 5%;
+    list-style: none;
+    padding: 100px, 200px;
+
+
+}
+
+.socials img {
+    width: 30px;
+    position: relative;
+    margin: 0px 0 20px;
+}
+
+.audio {
+    width: 100%;
+    position: relative;
+    margin: 100px 0 5px;
+    padding-bottom: 100px;
 }

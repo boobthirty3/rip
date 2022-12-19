@@ -39,7 +39,7 @@ function init() {
 
   //Load Model
   let loader = new THREE.GLTFLoader();
-  loader.load("./dolltit.gltf", function(gltf) {
+  loader.load("./dolltitsmooth.gltf", function(gltf) {
     scene.add(gltf.scene);
     doll = gltf.scene.children[0];
     animate();
