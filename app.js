@@ -27,7 +27,7 @@ function init() {
   scene.add(ambient);
 
   const light = new THREE.DirectionalLight(0xdddddd, 2);
-  light.position.set(50, -50, 200);
+  light.position.set(-500, 150, 200);
   scene.add(light);
   
   //Renderer
