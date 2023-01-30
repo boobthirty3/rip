@@ -2,11 +2,13 @@
 
 //Variables for setup
 
+
 let container;
 let camera;
 let renderer;
 let scene;
 let doll;
+let OrbitControls;
 
 function init() {
   container = document.querySelector(".scene");
@@ -21,13 +23,13 @@ function init() {
 
   //Camera setup
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(-2, 1, 6);
+  camera.position.set(-2, 1, 7);
 
   const ambient = new THREE.AmbientLight(0x404040, 2);
   scene.add(ambient);
 
   const light = new THREE.DirectionalLight(0xdddddd, 2);
-  light.position.set(-500, 150, 200);
+  light.position.set(-1000, 50, 7000);
   scene.add(light);
   
   //Renderer
@@ -45,8 +47,14 @@ function init() {
     animate();
   });
 
+  const controls = new THREE.OrbitControls( camera, renderer.domElement );
+				 // use if there is no animation loop
+				controls.minDistance = 400;
+				controls.maxDistance = 1000;
+				controls.target.set( 10, 90, - 16 );
+				controls.update();
+        window.addEventListener( 'resize', onWindowResize );
 }
-
 
 
 
@@ -60,6 +68,7 @@ function animate() {
   
 }
 
+
 init();
 
 function onWindowResize() {
@@ -70,5 +79,9 @@ function onWindowResize() {
 }
 
 window.addEventListener("resize", onWindowResize);
+
+
+
+
 
 
