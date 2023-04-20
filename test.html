@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fade In and Out Animation</title>
+	
+</head>
+<body>
+	<h1 class="fade-in-out">Heading 1</h1>
+	<h1 class="fade-in-out">Heading 2</h1>
+	<h1 class="fade-in-out">Heading 3</h1>
+	<h1 class="fade-in-out">Heading 4</h1>
+
+    <style>
+		.fade-in-out {
+			opacity: 0;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			setInterval(function() {
+				$('.fade-in-out').fadeOut(1000, function() {
+					$(this).fadeIn(1000);
+				});
+			}, 4000);
+		});
+	</script>
+</body>
+</html>

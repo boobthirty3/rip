@@ -1,14 +1,22 @@
-const sig = document.querySelector('.sigages');
-var y = pos.y 
-function nextImg () {
-sig.style.transform = "translate(0px,-400px)";
-sig.style.transition = "transform 0.5s ease";
+const sigages = document.querySelector('.sigages');
+
+let transformY = 0;
+
+function updateSlider(newTransform) {
+    transformY += newTransform;
+    sigages.style.transform = `translate(0px,${transformY}px)`;
+    if(newTransform > (400)) return
+    if(newTransform < (-1200)) return
 }
 
-function prevImg () {
-    sig.style.transform = "translate(0px, 0px)";
-    sig.style.transition = "transform 0.5s ease";
-    }
+const prevArrow = document.querySelector('.arrow');
+const nextArrow = document.querySelector('.arrow2');
+prevArrow.addEventListener('click', () => updateSlider(400))
+nextArrow.addEventListener('click', () => updateSlider(-400))
+
+
+
+    
 
 
 
