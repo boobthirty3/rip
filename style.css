@@ -13,8 +13,8 @@ body {
 }
 
 #menu-background-image img{
-    left: 40%; 
-    opacity: 0.2;
+    left: 60%; 
+    opacity: 0.4;
     position: absolute;
     transition: opacity 800ms ease,
       top 800ms ease,
@@ -23,10 +23,11 @@ body {
       scale 800ms ease;
     pointer-events: none;
     z-index: 1;
+    top: 30%;
   }
 
   .nav-links[data-active-index="0"] > #menu-background-image img{
-    top:  -40%;
+    top:  -30%;
   }
 
   .nav-links[data-active-index="1"] > #menu-background-image img{
@@ -168,6 +169,18 @@ nav {
     width: 100px;
     transform: rotate(270deg);
 }
+
+.angelus img{
+    width: 1000px;
+    position: absolute;
+    z-index: -2;
+    pointer-events: none;
+    opacity: 0.3;
+    padding: 1%;
+    margin: 8%;
+    left: 50px;
+    border: solid white 2px;
+}   
 
 .boo3 {
     position: fixed;
@@ -330,10 +343,10 @@ nav {
     transform: translate(98px, -350px) rotate(360deg);
     height: 9px;
     width: 9px;
-    background-color: darkred;
+    background-color: red;
 }
 .about .lines div {
-    background-color: darkred;
+    background-color: red;
 }
 
 .painting .line1 {
@@ -343,7 +356,7 @@ nav {
 }
 
 .painting .lines div {
-    background-color: whitesmoke;
+    background-color: red;
 }
 
 
@@ -354,7 +367,7 @@ nav {
     
 }
 .drawing .lines div {
-    background-color: grey;
+    background-color: red;
 }
 
 
@@ -364,7 +377,7 @@ nav {
     height: 3px
 }
 .digital .lines div {
-    background-color: grey;
+    background-color: red;
 }
 
 .shop .line1 {
