@@ -325,13 +325,13 @@ nav {
 .boob .line13 {
     transform: translate(50px, -140px) rotate(-90deg);
     opacity: 1;
-    background-color: red;
+    background-color: darkred;
     width: 10px;
 }
 .boob .line14 {
     transform: translate(85px, -157px) rotate(-270deg);
     opacity: 1;
-    background-color: red;
+    background-color: darkred;
 }
 
 .about .line1 {
@@ -343,10 +343,10 @@ nav {
     transform: translate(98px, -350px) rotate(360deg);
     height: 9px;
     width: 9px;
-    background-color: red;
+    background-color: darkred;
 }
 .about .lines div {
-    background-color: red;
+    background-color: darkred;
 }
 
 .painting .line1 {
@@ -356,7 +356,7 @@ nav {
 }
 
 .painting .lines div {
-    background-color: red;
+    background-color: darkred;
 }
 
 
@@ -367,7 +367,7 @@ nav {
     
 }
 .drawing .lines div {
-    background-color: red;
+    background-color: darkred;
 }
 
 
@@ -377,7 +377,7 @@ nav {
     height: 3px
 }
 .digital .lines div {
-    background-color: red;
+    background-color: darkred;
 }
 
 .shop .line1 {
