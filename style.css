@@ -6,11 +6,48 @@
 
 body {
     font-family: 'chivo mono', monospace;
-    background-image: linear-gradient(to bottom right, white, black);
+    background-image: linear-gradient(to bottom right, rgba(189, 57, 57, 0.411), black);
     color: grey;
-    
+    overflow: hidden;
     
 }
+
+#menu-background-image img{
+    left: 40%; 
+    opacity: 0.2;
+    position: absolute;
+    transition: opacity 800ms ease,
+      top 800ms ease,
+      left 800ms ease,
+      z-index 800ms ease,
+      scale 800ms ease;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .nav-links[data-active-index="0"] > #menu-background-image img{
+    top:  -40%;
+  }
+
+  .nav-links[data-active-index="1"] > #menu-background-image img{
+    top: -28%;
+  }
+  
+  .nav-links[data-active-index="2"] > #menu-background-image img{
+    top: -16%;
+  }
+  
+  .nav-links[data-active-index="3"] > #menu-background-image img{
+    top: -4%;
+  }
+
+  .nav-links[data-active-index="4"] > #menu-background-image img{
+    top: 0%;
+    
+    opacity: 1;
+    z-index: 2;
+    
+  } 
 
 .intro {
     height: 100vh;
@@ -59,6 +96,8 @@ nav {
     width: 20%; 
     position: fixed;
     cursor: default; 
+    animation: fade-down 10s ;
+    animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 
 
@@ -107,6 +146,29 @@ nav {
     
 }
 
+.audio {
+    width: 20%;
+    position: fixed;
+    bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column; 
+    animation: fade-down 3s ;
+    animation-timing-function: ease-in;
+}
+
+.audio a{
+    color: darkred;
+    list-style: none;
+      
+}
+
+.audio img{
+    height: 100px;
+    width: 100px;
+    transform: rotate(270deg);
+}
+
 .boo3 {
     position: fixed;
     width: 10%;
@@ -124,6 +186,14 @@ nav {
     width: 10%;
     height: 4%;
     margin-top: -30%;
+}
+
+.breakfast {
+    position: absolute;
+    width: 600px;
+    right: 20%;
+    color: antiquewhite;
+    animation: fade-up 100s ease;
 }
 
 .lines {
@@ -322,28 +392,6 @@ nav {
 }
 
 
-
-.audio {
-    width: 20%;
-    position: fixed;
-    bottom: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column; 
-}
-
-.audio a{
-    color: darkred;
-    list-style: none;
-      
-}
-
-.audio img{
-    height: 100px;
-    width: 100px;
-    transform: rotate(270deg);
-}
-
 .footer {
     position: fixed;
     bottom: 2px;
@@ -352,7 +400,32 @@ nav {
 }
 
 
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateX(-600px) scale(1);
 
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+
+}
+@keyframes fade-up {
+    0% {
+        opacity: 1;
+        transform: translateY(800px) scale(1);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-100%) scale(1);
+    }
+
+}
 
 
 @media (max-width: 1000px) {
