@@ -7,7 +7,7 @@
 
 body {
     font-family: 'chivo mono', monospace;
-    background-image: linear-gradient(to bottom right, rgba(189, 57, 57, 0.411), black);
+    background-color:rgb(102, 100, 100);
     overflow-x: hidden;
 }
 

@@ -6,8 +6,7 @@
 
 body {
     font-family: 'chivo mono', monospace;
-    background-image: linear-gradient(to bottom right, rgba(189, 57, 57, 0.411), black);
-    color: grey;
+    background-color: rgb(26, 26, 26);
     overflow: hidden;
     
 }
@@ -87,6 +86,7 @@ section {
 .wip {
     font-size: 20px;
     position: fixed;
+    color: whitesmoke;
     
 }
 
@@ -111,7 +111,7 @@ nav {
 }
 
 .nav-links ul li a {
-    color: black;
+    color: rgb(102, 100, 100);
     text-decoration: none;
     font-size: 15px;
     font-family: 'chivo mono', monospace;
@@ -121,8 +121,8 @@ nav {
 
 
 .nav-links ul li a:hover{
-    opacity: 0.3;
-    transition: color 0.2s ease;
+    color: whitesmoke;
+    transition: color 0.5s ease;
 }
 
 .current {
@@ -130,7 +130,7 @@ nav {
     opacity: 0.6;
     cursor:default;
     padding: 10px 10px;
-    color: black;
+    color: whitesmoke;
 }
 
 .burger {
@@ -179,7 +179,7 @@ nav {
     padding: 1%;
     margin: 8%;
     left: 50px;
-    border: solid white 2px;
+    border: solid whitesmoke 2px;
 }   
 
 .boo3 {
@@ -205,7 +205,7 @@ nav {
     position: absolute;
     width: 600px;
     right: 20%;
-    color: antiquewhite;
+    color: whitesmoke;
     animation: fade-up 100s ease;
 }
 

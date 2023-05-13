@@ -9,9 +9,8 @@
 body {
   font-family: 'chivo mono', monospace;
   overflow: hidden;
-  background-image: linear-gradient(to bottom right, rgba(189, 57, 57, 0.411), black);
   min-height: 100vh;
-  color: black;
+  background-color: rgb(26, 26, 26);
   
 }
 
@@ -50,7 +49,7 @@ nav {
 }
 
 .nav-links ul li a {
-    color: black;
+    color:rgb(102, 100, 100);
     text-decoration: none;
     font-size: 15px;
     font-family: 'chivo mono', monospace;
@@ -66,7 +65,7 @@ nav {
 
 .current {
   
-  opacity: 0.6;
+  color:pink;
   cursor:default;
   padding: 10px 10px;
 }
@@ -91,7 +90,7 @@ nav {
   width: 30%;
   right: 5%;
   top: 5%;
-  background-color: rgb(97, 101, 114);
+  background-color: rgb(102, 100, 100);
   padding: 2px;
   border: solid pink 1px;
   
@@ -170,7 +169,7 @@ h1 {
   left: 0;
   height: 100%;
   width: 100%;
-  background:rgb(97, 101, 114);;
+  background:rgb(102, 100, 100);
   border-left: 2px solid pink;
   animation: typing 3s steps(10) infinite;
 }
